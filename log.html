@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="CSS/logstyle.css">
+
+<body>
+  <div class="maincontainer">
+    <div class="formcontainer">
+      <button class="togglebtns" id="signin" onclick="modeswitcher('signinform',this)">Sign In</button>
+      <button class="togglebtns" onclick="modeswitcher('signupform',this)">Sign Up</button>
+
+      <form class="formcontent" id="signinform">
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="userpassword" placeholder="password"><br>
+        <a href="#">forgot password?</a><br>
+        <input type="submit" name="sign in" class="submitbtn"><br>
+        
+      </form>
+
+      <form class="formcontent" id="signupform">
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="email" name="email" placeholder="email address"><br>
+        <input type="password" name="userpassword" placeholder="password"><br>
+        <input type="password" name="userconfirmpassword" placeholder="confirm password"><br>
+        <input type="submit" name="sign in" class="submitbtn"><br>
+        <a href="#">not new?</a><br>
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <script src="JS/logfunct.js"></script>
+  
+</body>
+</html>
