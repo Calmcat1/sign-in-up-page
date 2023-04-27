@@ -32,3 +32,36 @@ elmnt.style.backgroundColor = "rgba(245, 103, 39, 1)"
 
 document.getElementById("signin").click()
 
+
+function notnewredire(){
+  
+  document.getElementById("signin").click()
+
+}
+
+
+function pageSwitcher(page,elmnt){
+
+  let tabcontent, i, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  for(i=0; i<tabcontent.length; i++){
+    tabcontent[i].style.display = "None";
+
+  }
+
+
+  document.getElementById(page).style.display = "block"
+
+
+  tablinks = document.getElementsByClassName("tablinks")
+
+  for(i=0; i<tablinks.length; i++){
+    tablinks[i].style.backgroundColor = ""
+  }
+
+  elmnt.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
+  elmnt.style.color
+}
+
